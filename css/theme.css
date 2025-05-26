@@ -1,0 +1,47 @@
+/* Tema Escuro (padrão) */
+:root[data-theme='dark'] {
+  --bg: #121212;
+  --text: #e4e4e4;
+  --accent: #facc15;
+  --muted: #aaa;
+  --card-bg: #1e1e1e;
+  --box-shadow: rgba(0, 0, 0, 0.2);
+  --img-border: #333;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Tema Claro */
+:root[data-theme='light'] {
+  --bg: #f4f4f4;
+  --text: #1a1a1a;
+  --accent: #c58f00;
+  --muted: #666;
+  --card-bg: #ffffff;
+  --box-shadow: rgba(0, 0, 0, 0.1);
+  --img-border: #ddd;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Reset básico e corpo comum */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Toggle de tema opcional */
+.theme-toggle {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.theme-toggle label {
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.theme-toggle input[type="checkbox"] {
+  margin-right: 0.5rem;
+  transform: scale(1.2);
+}

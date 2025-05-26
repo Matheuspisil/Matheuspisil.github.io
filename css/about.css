@@ -1,0 +1,167 @@
+/* Variáveis baseadas na identidade atual */
+:root {
+  --bg: #121212;
+  --text: #e4e4e4;
+  --accent: #facc15;
+  --muted: #888;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Poppins', sans-serif;
+  padding: 2rem 1rem;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+p {
+  max-width: 800px;
+  margin: 0 auto 1rem;
+  color: #ccc;
+}
+
+header.hero {
+  padding: 4rem 1rem 2rem;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.intro {
+  font-size: 1.2rem;
+  color: #bbb;
+  margin-top: 1rem;
+}
+
+/* Sessão Jornada */
+.jornada {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+  max-width: 1100px;
+}
+
+.jornada .texto {
+  flex: 1 1 500px;
+  padding: 1rem;
+}
+
+.jornada .imagem img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+/* Eventos */
+.eventos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.evento {
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.evento img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 0.75rem;
+}
+
+.evento p {
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.evento:hover {
+  transform: translateY(-4px);
+}
+
+
+/* Galeria */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.galeria img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.03);
+}
+
+/* Seção de Contato */
+.contato {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.botao-contato {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent);
+  color: #121212;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.botao-contato:hover {
+  background-color: #ffe066;
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .jornada {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .jornada .texto, .jornada .imagem {
+    width: 100%;
+  }
+
+  .eventos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
