@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <script>
+  const savedTheme = localStorage.getItem('theme') || 'dark';
+  document.documentElement.setAttribute('data-theme', savedTheme);
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme.css" />
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <meta property="og:title" content="Portfólio | Matheus Pires" />
+  <meta property="og:description" content="Soluções digitais com propósito. Projetos com Python, Flutter, Firebase e mais." />
+  <meta property="og:image" content="imgs/thumb-lab.jpg" />
+  <meta property="og:url" content="https://matheuspires.dev/lab.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <title>Matheus Pires — Estratégia & Execução</title>
+</head>
+
+<body>
+  <div class="theme-toggle">
+  <label>
+    <input
+      type="checkbox"
+      id="themeToggle"
+      onchange="
+        const theme = this.checked ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+      "
+    />
+    🌗 Modo claro
+  </label>
+</div>
+
+  <header>
+    <h1>Matheus Pires</h1>
+    <p>Fullstack Enginer, Software e Execução com Propósito</p>
+  </header>
+  <main>
+    <section>
+      <h2>Sobre Mim</h2>
+      <p>Construtor de soluções digitais com visão sistêmica, estética e execução completa. Acredito que tecnologia só
+        vale se for bela, útil e acessível. Construo com esse princípio.</p>
+      <a href="about.html"> + Sobre →</a>
+    </section>
+
+    <section>
+      <h2>O que eu faço</h2>
+      <ul>
+        <li>⚙️ Backend com performance (Node.js, Prisma, PostgreSQL, APIs seguras)</li>
+        <li>📲 Front-end mobile & web (Flutter, React e Streamlit. UI simples e eficiente)</li>
+        <li>🗃️ Dados e automações (Python, AI, Firebase, Webhooks)</li>
+      </ul>
+
+    </section>
+
+    <section>
+      <h2>Projetos em Destaque</h2>
+
+      <div class="projetos">
+        <article class="projeto">
+          <h3><a href="#">CRUD com Flask & Python</a></h3>
+          <p>Sistema completo com autenticação JWT, banco de dados SQLite e SQLAlchemy. Interface responsiva com foco em
+            usabilidade e performance.</p>
+        </article>
+
+        <article class="projeto">
+          <h3><a href="#">Banco de Talentos - Pretatech</a></h3>
+          <p>Aplicação voltada para as alunas do Pretatech 2 (EducafroTech). Utiliza Firebase Realtime Database com
+            hierarquia de usuários e interface intuitiva.</p>
+        </article>
+
+        <article class="projeto">
+          <h3><a href="#">Procarreiras</a></h3>
+          <p>Plataforma de gestão de carreiras desenvolvida em Django. Escalável, adaptável e voltada para instituições
+            de ensino. Finalizada e em processo de expansão.</p>
+        </article>
+      </div>
+
+      <div class="ver-mais">
+        <a href="lab.html">Veja todos os projetos →</a>
+      </div>
+    </section>
+
+
+    <section>
+      <h2>Contato</h2>
+      <p>📧 <a href="mailto:matheuspiresesilva@gmail.com">matheuspiresesilva@gmail.com</a></p>
+      <p>💼 <a href="https://github.com/MatheusPires-max" target="_blank">GitHub Work</a> · <a
+          href="https://github.com/Matheuspisil" target="_blank">GitHub Pessoal</a> · <a
+          href="https://www.linkedin.com/in/matheus-pires-78753586/" target="_blank">LinkedIn</a></p>
+    </section>
+  </main>
+  <footer>
+    © 2025 techforge. Todos os direitos reservados.
+  </footer>
+  <script>
+  const checkbox = document.getElementById('themeToggle');
+  checkbox.checked = localStorage.getItem('theme') === 'light';
+</script>
+
+</body>
+
+
+</html>
