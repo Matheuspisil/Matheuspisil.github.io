@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br" data-theme="dark">
+
 <head>
   <script>
-  const savedTheme = localStorage.getItem('theme') || 'dark';
-  document.documentElement.setAttribute('data-theme', savedTheme);
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
   </script>
 
   <meta charset="UTF-8" />
@@ -15,81 +16,98 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
   <meta property="og:title" content="Portfólio | Matheus Pires" />
-  <meta property="og:description" content="Soluções digitais com propósito. Projetos com Python, Flutter, Firebase e mais." />
+  <meta property="og:description"
+    content="Soluções digitais com propósito. Projetos com Python, Flutter, Firebase e mais." />
   <meta property="og:image" content="imgs/thumb-lab.jpg" />
   <meta property="og:url" content="https://matheuspires.dev/lab.html" />
   <meta name="twitter:card" content="summary_large_image" />
 </head>
+
 <body>
   <div class="theme-toggle">
-  <label>
-    <input
-      type="checkbox"
-      id="themeToggle"
-      onchange="
+    <label>
+      <input type="checkbox" id="themeToggle" onchange="
         const theme = this.checked ? 'light' : 'dark';
         document.documentElement.setAttribute('data-theme', theme);
         localStorage.setItem('theme', theme);
-      "
-    />
-    🌗 Modo claro
-  </label>
-</div>
+      " />
+      🌗 Modo claro
+    </label>
+  </div>
 
 
-  <section>
-    <h1>Meus Projetos</h1>
-    <p class="intro">Curadoria de soluções criadas com propósito — explorando dados, interfaces e sistemas web robustos.</p>
+  <section class="content-section">
+    <h1 class="heading main">Meus Projetos</h1>
+    <p class="intro muted">Curadoria de soluções criadas com propósito — explorando dados, interfaces e sistemas web
+      robustos.</p>
 
     <div class="grid">
-      <article class="projeto">
-        <h2>Plataforma de Eventos</h2>
-        <p>Do backend ao front: autenticação JWT, pagamentos via QR Code e UI Flutter responsiva.</p>
+      <article class="projeto card">
+        <h2 class="heading">Plataforma de Eventos</h2>
+        <p class="text">Do backend ao front: autenticação JWT, pagamentos via QR Code e UI Flutter responsiva.</p>
       </article>
 
-      <article class="projeto">
-        <h2>Sistema de Domínios Inteligentes</h2>
-        <p>Gestão hierárquica de conhecimento usando Firebase Realtime Database e interface modular em Flutter.</p>
+      <article class="projeto card">
+        <h2 class="heading">Sistema de Domínios Inteligentes</h2>
+        <p class="text">Gestão hierárquica de conhecimento usando Firebase Realtime Database e interface modular em
+          Flutter.</p>
       </article>
 
-      <article class="projeto">
-        <h2>Painel de Configuração Pessoal</h2>
-        <p>Interface avançada de preferências com temas, notificações e idioma. Integrado com Firebase.</p>
+      <article class="projeto card">
+        <h2 class="heading">Painel de Configuração Pessoal</h2>
+        <p class="text">Interface avançada de preferências com temas, notificações e idioma. Integrado com Firebase.</p>
       </article>
 
-      <article class="projeto">
-        <h2>Dashboard de KPIs com Streamlit</h2>
-        <p>Análises financeiras e operacionais com Python, Pandas, Plotly e Streamlit para visualizações interativas.</p>
+      <article class="projeto card">
+        <h2 class="heading">Dashboard de KPIs com Streamlit</h2>
+        <p class="text">Análises financeiras e operacionais com Python, Pandas, Plotly e Streamlit para visualizações
+          interativas.</p>
       </article>
 
-      <article class="projeto">
-        <h2>Procarreiras</h2>
-        <p>Plataforma de gestão de carreiras em Django + PostgreSQL, com foco em instituições educacionais.</p>
+      <article class="projeto card">
+        <h2 class="heading">Procarreiras</h2>
+        <p class="text">Plataforma de gestão de carreiras em Django + PostgreSQL, com foco em instituições educacionais.
+        </p>
       </article>
 
-      <article class="projeto">
-        <h2>CRUD com Flask & Python</h2>
-        <p>Sistema completo com autenticação JWT, SQLite e SQLAlchemy. Backend funcional com UI leve.</p>
+      <article class="projeto card">
+        <h2 class="heading">CRUD com Flask & Python</h2>
+        <p class="text">Sistema completo com autenticação JWT, SQLite e SQLAlchemy. Backend funcional com UI leve.</p>
       </article>
 
-      <article class="projeto">
-        <h2>Banco de Talentos - Pretatech</h2>
-        <p>Aplicação para mapeamento das alunas da EducafroTech com Firebase e visualização hierárquica.</p>
+      <article class="projeto card">
+        <h2 class="heading">Banco de Talentos - Pretatech</h2>
+        <p class="text">Aplicação para mapeamento das alunas da EducafroTech com Firebase e visualização hierárquica.
+        </p>
       </article>
 
-      <article class="projeto">
-        <h2>Procarreiras MCTI</h2>
-        <p>Versão institucional com foco em startups, construída em Django. Parceria com Brisa e MCTI.</p>
+      <article class="projeto card">
+        <h2 class="heading">Procarreiras MCTI</h2>
+        <p class="text">Versão institucional com foco em startups, construída em Django. Parceria com Brisa e MCTI.</p>
       </article>
 
-      <article class="projeto">
-        <h2>Em construção...</h2>
-        <p>Mais um projeto impactante está em desenvolvimento. Em breve com mais informações.</p>
+      <article id="foco-gestao-conteudo" class="projeto card">
+        <h2 class="heading">Gestão de Conteúdo</h2>
+        <p>
+          Plataforma de gestão de conteúdos desenvolvida em Flutter, com foco em versionamento, edição e estruturação
+          inteligente por meio de três níveis: <strong>Domínios</strong>, <strong>Subdomínios</strong> e
+          <strong>Contextos</strong>.
+          Ideal para construção de <strong>datasets personalizados</strong> e organização de informações estratégicas
+          para alimentar sistemas de <strong>AGI (Inteligência Artificial Geral)</strong>.
+        </p>
       </article>
+
+
+      <article class="projeto card">
+        <h2 class="heading">Em construção...</h2>
+        <p class="text">Mais um projeto impactante está em desenvolvimento. Em breve com mais informações.</p>
+      </article>
+
     </div>
 
     <div class="contato-final">
-      <p>📧 Para saber mais sobre qualquer projeto, entre em contato: <a href="mailto:matheuspiresesilva@gmail.com">matheuspiresesilva@gmail.com</a></p>
+      <p class="text">📧 Para saber mais sobre qualquer projeto, entre em contato: <a
+          href="mailto:matheuspiresesilva@gmail.com">matheuspiresesilva@gmail.com</a></p>
     </div>
 
     <div class="stack-final">
@@ -99,14 +117,16 @@
         <li><strong>Frameworks & Bibliotecas:</strong> Flask, Django, Streamlit, Flutter, React, Plotly, Pandas</li>
         <li><strong>Back-end & APIs:</strong> Node.js, Prisma, JWT, Firebase Functions, Webhooks</li>
         <li><strong>Banco de dados:</strong> Firebase Realtime Database, PostgreSQL, SQLite, SQLAlchemy</li>
-        <li><strong>Ferramentas e Plataformas:</strong> Firebase Auth, Firebase Storage, GitHub, VS Code, Ubuntu, Cloudflare</li>
+        <li><strong>Ferramentas e Plataformas:</strong> Firebase Auth, Firebase Storage, GitHub, VS Code, Ubuntu,
+          Cloudflare</li>
       </ul>
     </div>
   </section>
   <script>
-  const checkbox = document.getElementById('themeToggle');
-  checkbox.checked = localStorage.getItem('theme') === 'light';
-</script>
+    const checkbox = document.getElementById('themeToggle');
+    checkbox.checked = localStorage.getItem('theme') === 'light';
+  </script>
 
 </body>
+
 </html>

@@ -1,9 +1,9 @@
 /* Variáveis baseadas na identidade atual */
 :root {
-  --bg: #121212;
-  --text: #e4e4e4;
-  --accent: #facc15;
-  --muted: #888;
+  --bg: var(--bg);
+  --text: var(--text);
+  --accent: var(--accent);
+  --muted: var(--muted);
   font-family: 'Poppins', sans-serif;
 }
 
@@ -31,7 +31,7 @@ h1, h2 {
 p {
   max-width: 800px;
   margin: 0 auto 1rem;
-  color: #ccc;
+  color: var(--muted);
 }
 
 header.hero {
@@ -42,7 +42,7 @@ header.hero {
 
 .intro {
   font-size: 1.2rem;
-  color: #bbb;
+  color: var(--muted);
   margin-top: 1rem;
 }
 
@@ -78,7 +78,7 @@ header.hero {
 }
 
 .evento {
-  background-color: #1e1e1e;
+  background-color: var(--card-bg);
   padding: 1rem;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
@@ -92,7 +92,7 @@ header.hero {
 }
 
 .evento p {
-  color: #ccc;
+  color: var(--muted);
   font-size: 0.95rem;
   line-height: 1.4;
 }
@@ -131,7 +131,7 @@ header.hero {
   margin-top: 1rem;
   padding: 0.75rem 1.5rem;
   background-color: var(--accent);
-  color: #121212;
+  color: var(--bg);
   font-weight: bold;
   border: none;
   border-radius: 6px;
@@ -140,7 +140,7 @@ header.hero {
 }
 
 .botao-contato:hover {
-  background-color: #ffe066;
+  background-color: var(--accent-light);
 }
 
 /* Animação de entrada */
