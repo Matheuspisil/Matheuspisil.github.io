@@ -1,12 +1,12 @@
 /* Dark Theme (padrão) */
 :root[data-theme='dark'] {
-  --bg: #121212;
-  --text: #e4e4e4;
-  --accent: #facc15;
-  --muted: #aaa;
-  --card-bg: #1e1e1e;
+  --bg: var(--bg);
+  --text: var(--text);
+  --accent: var(--accent);
+  --muted: var(--muted);
+  --card-bg: var(--card-bg);
   --box-shadow: rgba(0, 0, 0, 0.2);
-  --img-border: #333;
+  --img-border: var(--img-border);
   font-family: 'Inter', sans-serif;
 }
 
@@ -135,7 +135,7 @@ h1 {
 }
 
 .projeto a:hover {
-  color: #ffe066;
+  color: var(--accent-light);
 }
 
 /* Fade animation */
@@ -194,7 +194,7 @@ h1 {
 }
 
 .contato-final a:hover {
-  color: #ffe066;
+  color: var(--accent-light);
 }
 
 /* Responsivo extra */

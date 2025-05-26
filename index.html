@@ -3,8 +3,8 @@
 
 <head>
   <script>
-  const savedTheme = localStorage.getItem('theme') || 'dark';
-  document.documentElement.setAttribute('data-theme', savedTheme);
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
   </script>
 
   <meta charset="UTF-8">
@@ -12,13 +12,14 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/theme.css" />
 
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="imgs/favicontechforge.png" type="image/x-icon" />
 
   <meta property="og:title" content="Portfólio | Matheus Pires" />
-  <meta property="og:description" content="Soluções digitais com propósito. Projetos com Python, Flutter, Firebase e mais." />
+  <meta property="og:description"
+    content="Soluções digitais com propósito. Projetos com Python, Flutter, Firebase e mais." />
   <meta property="og:image" content="imgs/thumb-lab.jpg" />
-  <meta property="og:url" content="https://matheuspires.dev/lab.html" />
-  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:url" content="https://https://matheuspisil.github.io/" />
+  
 
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
@@ -27,34 +28,30 @@
 
 <body>
   <div class="theme-toggle">
-  <label>
-    <input
-      type="checkbox"
-      id="themeToggle"
-      onchange="
+    <label>
+      <input type="checkbox" id="themeToggle" onchange="
         const theme = this.checked ? 'light' : 'dark';
         document.documentElement.setAttribute('data-theme', theme);
         localStorage.setItem('theme', theme);
-      "
-    />
-    🌗 Modo claro
-  </label>
-</div>
+      " />
+      🌗 Modo claro
+    </label>
+  </div>
 
   <header>
-    <h1>Matheus Pires</h1>
-    <p>Fullstack Enginer, Software e Execução com Propósito</p>
+    <h1 class="heading main">Matheus Pires</h1>
+    <p class="text">Fullstack Enginer, Software e Execução com Propósito</p>
   </header>
   <main>
-    <section>
-      <h2>Sobre Mim</h2>
+    <section class="content-section">
+      <h2 class="heading">Sobre Mim</h2>
       <p>Construtor de soluções digitais com visão sistêmica, estética e execução completa. Acredito que tecnologia só
         vale se for bela, útil e acessível. Construo com esse princípio.</p>
       <a href="about.html"> + Sobre →</a>
     </section>
 
-    <section>
-      <h2>O que eu faço</h2>
+    <section class="content-section">
+      <h2 class="heading">O que eu faço</h2>
       <ul>
         <li>⚙️ Backend com performance (Node.js, Prisma, PostgreSQL, APIs seguras)</li>
         <li>📲 Front-end mobile & web (Flutter, React e Streamlit. UI simples e eficiente)</li>
@@ -63,50 +60,67 @@
 
     </section>
 
-    <section>
-      <h2>Projetos em Destaque</h2>
+    <section class="content-section">
+      <h2 class="heading">Projetos em Destaque</h2>
 
-      <div class="projetos">
-        <article class="projeto">
-          <h3><a href="#">CRUD com Flask & Python</a></h3>
+      <div class="grid projetos">
+        <article class="projeto card">
+          <h3><a href="lab.html">CRUD com Flask & Python</a></h3>
           <p>Sistema completo com autenticação JWT, banco de dados SQLite e SQLAlchemy. Interface responsiva com foco em
             usabilidade e performance.</p>
         </article>
 
-        <article class="projeto">
-          <h3><a href="#">Banco de Talentos - Pretatech</a></h3>
+        <article class="projeto card">
+          <h3><a href="lab.html">Banco de Talentos - Pretatech</a></h3>
           <p>Aplicação voltada para as alunas do Pretatech 2 (EducafroTech). Utiliza Firebase Realtime Database com
             hierarquia de usuários e interface intuitiva.</p>
         </article>
 
-        <article class="projeto">
-          <h3><a href="#">Procarreiras</a></h3>
+        <article class="projeto card">
+          <h3><a href="lab.html">Procarreiras</a></h3>
           <p>Plataforma de gestão de carreiras desenvolvida em Django. Escalável, adaptável e voltada para instituições
             de ensino. Finalizada e em processo de expansão.</p>
         </article>
-      </div>
 
+        <article class="projeto card">
+          <h3><a href="lab.html#foco-gestao-conteudo">Gestão de Conteúdos</a></h3>
+          <p>
+            Plataforma de gestão de conteúdos desenvolvida em Flutter. Oferece versionamento, edição e organização
+            eficiente com base em três níveis estruturais: <strong>Domínios</strong>, <strong>Subdomínios</strong> e
+            <strong>Contextos</strong>.
+          </p>
+        </article>
+
+      </div>
+      <br>
       <div class="ver-mais">
         <a href="lab.html">Veja todos os projetos →</a>
       </div>
     </section>
 
 
-    <section>
-      <h2>Contato</h2>
-      <p>📧 <a href="mailto:matheuspiresesilva@gmail.com">matheuspiresesilva@gmail.com</a></p>
+    <section class="content-section">
+      <h2 class="heading">Contato</h2>
+      <p class="text">📧 <a href="mailto:matheuspiresesilva@gmail.com">matheuspiresesilva@gmail.com</a></p>
       <p>💼 <a href="https://github.com/MatheusPires-max" target="_blank">GitHub Work</a> · <a
           href="https://github.com/Matheuspisil" target="_blank">GitHub Pessoal</a> · <a
           href="https://www.linkedin.com/in/matheus-pires-78753586/" target="_blank">LinkedIn</a></p>
     </section>
   </main>
+
+  <section>
+    <a href="https://wa.me/5521969084980" class="whatsapp-float" target="_blank" aria-label="Me chama no WhatsApp">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+      <span class="tooltip">Me chama no WhatsApp</span>
+    </a>
+  </section>
   <footer>
     © 2025 techforge. Todos os direitos reservados.
   </footer>
   <script>
-  const checkbox = document.getElementById('themeToggle');
-  checkbox.checked = localStorage.getItem('theme') === 'light';
-</script>
+    const checkbox = document.getElementById('themeToggle');
+    checkbox.checked = localStorage.getItem('theme') === 'light';
+  </script>
 
 </body>
 
