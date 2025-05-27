@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre mí - Matheus Pires</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/theme.css" />
+</head>
+
+<body>
+  <nav class="top-nav">
+    <ul>
+      <li><a href="index-es.html">Inicio</a></li>
+      <li><a href="about-es.html">Sobre mí</a></li>
+      <li><a href="lab-es.html">Proyectos</a></li>
+    </ul>
+    <div class="language-switcher">
+      <a href="about.html">🇧🇷</a>
+      <a href="about-en.html">🇺🇸</a>
+      <a href="about-es.html">🇪🇸</a>
+    </div>
+  </nav>
+
+  <div class="theme-toggle">
+    <label>
+      <input type="checkbox" id="themeToggle" />
+      🌗 Modo claro
+    </label>
+  </div>
+
+  <header class="hero">
+    <h1 class="heading main">Quién soy — Más allá del código</h1>
+    <p class="intro muted">Conectando ideas audaces con soluciones reales.</p>
+  </header>
+
+  <main>
+    <section class="jornada">
+      <div class="texto">
+        <h2 class="heading">Mi trayectoria</h2>
+        <p class="text">Soy Matheus Pires, desarrollador fullstack con mentalidad de producto. Doy vida a ideas, lidero plataformas de eventos, construyo paneles inteligentes y sistemas enfocados en usabilidad y escalabilidad.</p>
+        <p class="text">Trabajo con Python, Flutter, Firebase, PostgreSQL, automatización, APIs seguras y arquitecturas modernas. Pero más allá de las herramientas — entrego sistemas funcionales.</p>
+      </div>
+      <div class="imagem">
+        <img src="imgs/euport.jpeg" alt="Presentación en WebSummit Rio 2025" />
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2 class="heading">Eventos y proyectos destacados</h2>
+      <div class="eventos">
+        <div class="evento">
+          <img src="imgs/proshow.jpeg" alt="Presentación Procarreiras" />
+          <p class="text"><strong>Procarreiras:</strong> Presentación del proyecto a socios de Brisa y MCTI.</p>
+        </div>
+        <div class="evento">
+          <img src="imgs/pretatech1.jpeg" alt="Pretatech 1" />
+          <p class="text"><strong>Pretatech:</strong> Proyectos ágiles con inmersión y aprendizaje en Python para estudiantes de EducafroTech.</p>
+        </div>
+        <div class="evento">
+          <img src="imgs/meetwtim.jpeg" alt="Proyecto TIM" />
+          <p class="text"><strong>Proyecto TIM:</strong> Proyecto centrado en la organización de datos empresariales con enfoque ágil.</p>
+        </div>
+        <div class="evento">
+          <img src="imgs/pretatech2.jpg" alt="Pretatech 2" />
+          <p class="text"><strong>Pretatech 2:</strong> Desarrollo ágil con Flask y Python. Base de talentos simple y funcional.</p>
+        </div>
+        <div class="evento">
+          <img src="imgs/apresentaprocarreiras.jpeg" alt="Procarreiras MCTI" />
+          <p class="text"><strong>Procarreiras MCTI:</strong> Proyecto en Django enfocado en startups. En colaboración con Brisa y el Ministerio de Ciencia y Tecnología.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2 class="heading">En imágenes</h2>
+      <div class="galeria">
+        <img src="imgs/gerais/all.jpeg" alt="Todos los proyectos" />
+        <img src="imgs/gerais/happyourcentrorio.jpeg" alt="Happy Hour - Centro" />
+        <img src="imgs/gerais/happyourleblon.jpeg" alt="Happy Hour - WebSummit" />
+      </div>
+    </section>
+
+    <section class="contato">
+      <h2 class="heading">¿Conversamos?</h2>
+      <p class="text">¿Buscas alguien con visión estratégica y ejecución rápida? Hablemos.</p>
+      <a href="mailto:matheuspiresesilva@gmail.com" class="botao-contato">Contáctame</a>
+    </section>
+  </main>
+
+  <section>
+    <a href="https://wa.me/5521969084980" class="whatsapp-float" target="_blank" aria-label="Escríbeme en WhatsApp">
+      <img src="imgs/icon-whatsapp.png" alt="WhatsApp" />
+      <span class="tooltip">Escríbeme en WhatsApp</span>
+    </a>
+  </section>
+
+  <footer>
+    © 2025 techforge. Todos los derechos reservados.
+  </footer>
+
+  <script>
+    const checkbox = document.getElementById('themeToggle');
+    checkbox.checked = localStorage.getItem('theme') === 'light';
+  </script>
+</body>
+</html>

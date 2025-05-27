@@ -2,12 +2,12 @@
 <html lang="pt-br">
 
 <head>
+  <meta charset="UTF-8">
   <script>
     const savedTheme = localStorage.getItem('theme') || 'dark';
     document.documentElement.setAttribute('data-theme', savedTheme);
   </script>
 
-  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sobre - Matheus Pires</title>
   <link rel="stylesheet" href="css/style.css">
@@ -27,6 +27,18 @@
 </head>
 
 <body>
+  <nav class="top-nav">
+    <ul>
+      <li><a href="index.html"> Início</a></li>
+      <li><a href="about.html"> Sobre</a></li>
+      <li><a href="lab.html"> Projetos</a></li>
+    </ul>
+    <div class="language-switcher">
+      <a href="index.html">🇧🇷</a>
+      <a href="index-en.html">🇺🇸</a>
+      <a href="about-es.html">🇪🇸</a>
+    </div>
+  </nav>
   <div class="theme-toggle">
     <label>
       <input type="checkbox" id="themeToggle" onchange="
@@ -69,7 +81,7 @@
         </div>
         <div class="evento">
           <img src="imgs/pretatech1.jpeg" alt="Pretatech 1" />
-          <p class="text"><strong>Pretatech:</strong> Projetos ágeis com imersão e aaprendizado em Python instrutor de
+          <p class="text"><strong>Pretatech:</strong> Projetos ágeis com imersão e aprendizado em Python instrutor de
             Python da EducafroTech.</p>
         </div>
         <div class="evento">
@@ -87,7 +99,7 @@
       <div class="evento">
         <img src="imgs/apresentaprocarreiras.jpeg" alt="Apresentação do Procarreiras" />
         <p class="text"><strong>Projeto Procarreiras MCTI:</strong> Projetos ágeis com foco Django e Python, Para o
-          sertor de startups do MCTI.</p>
+          setor de startups do MCTI.</p>
       </div>
       </div>
       </div>

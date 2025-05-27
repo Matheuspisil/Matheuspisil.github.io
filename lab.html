@@ -2,12 +2,11 @@
 <html lang="pt-br" data-theme="dark">
 
 <head>
+  <meta charset="UTF-8" />
   <script>
     const savedTheme = localStorage.getItem('theme') || 'dark';
     document.documentElement.setAttribute('data-theme', savedTheme);
   </script>
-
-  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projetos de Matheus Pires</title>
   <link rel="stylesheet" href="css/style.css">
@@ -24,6 +23,18 @@
 </head>
 
 <body>
+  <nav class="top-nav">
+    <ul>
+      <li><a href="index.html"> Início</a></li>
+      <li><a href="about.html"> Sobre</a></li>
+      <li><a href="lab.html"> Projetos</a></li>
+    </ul>
+    <div class="language-switcher">
+      <a href="index.html">🇧🇷</a>
+      <a href="index-en.html">🇺🇸</a>
+      <a href="lab-es.html">🇪🇸</a>
+    </div>
+  </nav>
   <div class="theme-toggle">
     <label>
       <input type="checkbox" id="themeToggle" onchange="

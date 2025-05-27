@@ -2,12 +2,11 @@
 <html lang="pt-br">
 
 <head>
+  <meta charset="UTF-8">
   <script>
     const savedTheme = localStorage.getItem('theme') || 'dark';
     document.documentElement.setAttribute('data-theme', savedTheme);
   </script>
-
-  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/theme.css" />
@@ -19,14 +18,28 @@
     content="Soluções digitais com propósito. Projetos com Python, Flutter, Firebase e mais." />
   <meta property="og:image" content="imgs/thumb-lab.jpg" />
   <meta property="og:url" content="https://https://matheuspisil.github.io/" />
-  
+
 
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
   <title>Matheus Pires — Estratégia & Execução</title>
+
 </head>
 
 <body>
+  <nav class="top-nav">
+    <ul>
+      <li><a href="index.html"> Início</a></li>
+      <li><a href="about.html"> Sobre</a></li>
+      <li><a href="lab.html"> Projetos</a></li>
+    </ul>
+    <div class="language-switcher">
+      <a href="index.html">🇧🇷</a>
+      <a href="index-en.html">🇺🇸</a>
+      <a href="index-es.html">🇪🇸</a>
+    </div>
+  </nav>
+
   <div class="theme-toggle">
     <label>
       <input type="checkbox" id="themeToggle" onchange="

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  </script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Matheus Pires</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/theme.css" />
+
+</head>
+
+<body>
+  <nav class="top-nav">
+    <ul>
+      <li><a href="index-en.html"> Start</a></li>
+      <li><a href="about-en.html"> About</a></li>
+      <li><a href="lab-en.html"> Projects</a></li>
+    </ul>
+
+    <div class="language-switcher">
+      <a href="lab.html">🇧🇷</a>
+      <a href="lab-en.html">🇺🇸</a>
+      <a href="about-es.html">🇪🇸</a>
+    </div>
+  </nav>
+  <div class="theme-toggle">
+    <label>
+      <input type="checkbox" id="themeToggle" onchange="
+      const theme = this.checked ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+" />
+
+      🌗 Light mode
+    </label>
+  </div>
+  <header class="hero">
+    <h1 class="heading main">Who I Am — Beyond the Code</h1>
+    <p class="intro muted">Connecting bold ideas to real solutions.</p>
+  </header>
+
+  <main>
+    <section class="jornada">
+      <div class="texto">
+        <h2 class="heading">My Journey</h2>
+        <p class="text">I'm Matheus Pires, a fullstack developer with a product mindset. I've brought ideas to life, led
+          event platforms, built intelligent dashboards, and developed systems with usability and scale in mind.</p>
+        <p class="text">I work with Python, Flutter, Firebase, PostgreSQL, automation, secure APIs, and modern
+          architecture. But more than tools — I deliver working systems.</p>
+      </div>
+      <div class="imagem">
+        <img src="imgs/euport.jpeg" alt="Presentation at WebSummit Rio 2025" />
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2 class="heading">Events and Highlighted Projects</h2>
+      <div class="eventos">
+        <div class="evento">
+          <img src="imgs/proshow.jpeg" alt="Procarreiras Presentation" />
+          <p class="text"><strong>Procarreiras:</strong> Project presentation to Brisa and MCTI partners.</p>
+        </div>
+        <div class="evento">
+          <img src="imgs/pretatech1.jpeg" alt="Pretatech 1" />
+          <p class="text"><strong>Pretatech:</strong> Agile projects with immersion and Python training for EducafroTech
+            students.</p>
+        </div>
+
+        <div class="evento">
+          <img src="imgs/meetwtim.jpeg" alt="TIM Data Project" />
+          <p class="text"><strong>TIM Data Project:</strong> Agile projects focused on organizing large-scale enterprise
+            data for TIM.</p>
+        </div>
+
+        <div class="evento">
+          <img src="imgs/pretatech2.jpg" alt="Pretatech 2" />
+          <p class="text"><strong>Pretatech 2:</strong> Agile development with Flask and Python. A small talent database
+            project.</p>
+        </div>
+
+        <div class="evento">
+          <img src="imgs/apresentaprocarreiras.jpeg" alt="Procarreiras MCTI Presentation" />
+          <p class="text"><strong>Procarreiras MCTI:</strong> Agile project using Django and Python for the startup
+            division of Brazil’s MCTI.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2 class="heading">In Pictures.</h2>
+      <div class="galeria">
+        <img src="imgs/gerais/all.jpeg" alt="All Projects" />
+        <img src="imgs/gerais/happyourcentrorio.jpeg" alt="Happy Hour Downtown" />
+        <img src="imgs/gerais/happyourleblon.jpeg" alt="Happy Hour WebSummit" />
+      </div>
+    </section>
+
+    <section class="contato">
+      <h2 class="heading">Let's talk?</h2>
+      <p class="text">Looking for someone with long-term vision and fast execution? Let’s connect.</p>
+      <a href="mailto:matheuspiresesilva@gmail.com" class="botao-contato">Get in Touch</a>
+    </section>
+  </main>
+  <section>
+    <a href="https://wa.me/5521969084980" class="whatsapp-float" target="_blank" aria-label="Message me on WhatsApp">
+      <img src="imgs/icon-whatsapp.png" alt="WhatsApp" />
+      <span class="tooltip">Message me on WhatsApp</span>
+    </a>
+  </section>
+
+  <script>
+    const checkbox = document.getElementById('themeToggle');
+    checkbox.checked = localStorage.getItem('theme') === 'light';
+  </script>
+
+</body>
+
+</html>
