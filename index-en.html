@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matheus Pires — Strategy & Execution</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/theme.css" />
+
+</head>
+
+<body>
+  <nav class="top-nav">
+    <ul>
+      <li><a href="index-en.html"> Start</a></li>
+      <li><a href="about-en.html"> About</a></li>
+      <li><a href="lab-en.html"> Projects</a></li>
+    </ul>
+
+    <div class="language-switcher">
+      <a href="lab.html">🇧🇷</a>
+      <a href="lab-en.html">🇺🇸</a>
+    </div>
+  </nav>
+  <div class="theme-toggle">
+    <label>
+      <input type="checkbox" id="themeToggle" onchange="
+      const theme = this.checked ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+" />
+
+      🌗 Light mode
+    </label>
+  </div>
+
+  <header>
+    <h1 class="heading main">Matheus Pires</h1>
+    <p class="text">Fullstack Engineer, Software and Execution with Purpose</p>
+  </header>
+
+  <main>
+    <section class="content-section">
+      <h2 class="heading">About Me</h2>
+      <p>Builder of digital solutions with systemic vision, aesthetics, and complete execution. I believe technology
+        only matters if it's beautiful, useful, and accessible. I build with this principle.</p>
+      <a href="about-en.html"> + About →</a>
+    </section>
+
+    <section class="content-section">
+      <h2 class="heading">What I Do</h2>
+      <ul>
+        <li>⚙️ Backend with performance (Node.js, Prisma, PostgreSQL, secure APIs)</li>
+        <li>📲 Mobile & web front-end (Flutter, React, Streamlit — clean and efficient UI)</li>
+        <li>🗃️ Data & automations (Python, AI, Firebase, Webhooks)</li>
+      </ul>
+    </section>
+
+    <section class="content-section">
+      <h2 class="heading">Featured Projects</h2>
+      <div class="grid projetos">
+        <article class="projeto card">
+          <h3><a href="lab-en.html#foco-gestao-conteudo">Content Management</a></h3>
+          <p>Flutter-based content platform with structured layers: <strong>Domains</strong>,
+            <strong>Subdomains</strong> and <strong>Contexts</strong>. Ideal for managing custom datasets and AGI-ready
+            content.
+          </p>
+        </article>
+        <article class="projeto card">
+          <h3><a href="lab.html">CRUD with Flask & Python</a></h3>
+          <p>Complete system with JWT authentication, SQLite database, and SQLAlchemy. Responsive UI focused on
+            usability and performance.</p>
+        </article>
+
+        <article class="projeto card">
+          <h3><a href="lab.html">Talent Pool – Pretatech</a></h3>
+          <p>Application for students of Pretatech 2 (EducafroTech). Built with Firebase Realtime Database and intuitive
+            user hierarchy interface.</p>
+        </article>
+
+        <article class="projeto card">
+          <h3><a href="lab.html">Procarreiras</a></h3>
+          <p>Career management platform built with Django. Scalable, adaptable, and focused on educational institutions.
+            Completed and in expansion.</p>
+        </article>
+        <br>
+      </div>
+      <div class="ver-mais">
+        <a href="lab-en.html">See all projects →</a>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2 class="heading">Contact</h2>
+      <p class="text">📧 <a href="mailto:matheuspiresesilva@gmail.com">matheuspiresesilva@gmail.com</a></p>
+      <p>💼 <a href="https://github.com/MatheusPires-max">GitHub Work</a> · <a
+          href="https://github.com/Matheuspisil">Personal GitHub</a> · <a
+          href="https://linkedin.com/in/matheus-pires-78753586/">LinkedIn</a></p>
+    </section>
+  </main>
+
+  <footer>© 2025 techforge. All rights reserved.</footer>
+  <script>
+    const checkbox = document.getElementById('themeToggle');
+    checkbox.checked = localStorage.getItem('theme') === 'light';
+  </script>
+
+</body>
+
+</html>

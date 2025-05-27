@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <script>
+  const savedTheme = localStorage.getItem('theme') || 'dark';
+  document.documentElement.setAttribute('data-theme', savedTheme);
+</script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Matheus Pires</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/lab.css" />
+  <link rel="stylesheet" href="css/theme.css" />
+
+</head>
+
+<body>
+  <nav class="top-nav">
+    <ul>
+      <li><a href="index-en.html"> Start</a></li>
+      <li><a href="about-en.html"> About</a></li>
+      <li><a href="lab-en.html"> Projects</a></li>
+    </ul>
+
+    <div class="language-switcher">
+      <a href="lab.html">🇧🇷</a>
+      <a href="lab-en.html">🇺🇸</a>
+    </div>
+  </nav>
+  <div class="theme-toggle">
+    <label>
+      <input type="checkbox" id="themeToggle" onchange="
+      const theme = this.checked ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+    " />
+      🌗 Light Mode
+    </label>
+  </div>
+
+  <section class="content-section">
+    <h1 class="heading main">My Projects</h1>
+    <p class="intro muted">A curated list of purposeful solutions — exploring data, interfaces, and scalable systems.
+    </p>
+
+    <div class="grid">
+      <article class="projeto card">
+        <h2 class="heading">Event Platform</h2>
+        <p class="text">From backend to front: JWT authentication, QR Code payments, and responsive Flutter UI.</p>
+      </article>
+
+      <article class="projeto card">
+        <h2 class="heading">Intelligent Domain System</h2>
+        <p class="text">Hierarchical knowledge management using Firebase Realtime Database and a modular Flutter
+          interface.</p>
+      </article>
+
+      <article class="projeto card">
+        <h2 class="heading">Personal Settings Panel</h2>
+        <p class="text">Advanced preferences interface with themes, notifications, and language control. Fully
+          integrated with Firebase.</p>
+      </article>
+
+      <article class="projeto card">
+        <h2 class="heading">KPI Dashboard with Streamlit</h2>
+        <p class="text">Financial and operational analysis with Python, Pandas, Plotly, and Streamlit for interactive
+          visualizations.</p>
+      </article>
+
+      <article class="projeto card">
+        <h2 class="heading">Procarreiras</h2>
+        <p class="text">Career management platform built with Django + PostgreSQL, focused on educational institutions.
+        </p>
+      </article>
+
+      <article class="projeto card">
+        <h2 class="heading">CRUD with Flask & Python</h2>
+        <p class="text">Complete system with JWT authentication, SQLite, and SQLAlchemy. Functional backend with a clean
+          UI.</p>
+      </article>
+
+      <article class="projeto card">
+        <h2 class="heading">Talent Pool – Pretatech</h2>
+        <p class="text">Application for mapping EducafroTech students using Firebase and a hierarchical visualization
+          model.</p>
+      </article>
+
+      <article class="projeto card">
+        <h2 class="heading">Procarreiras MCTI</h2>
+        <p class="text">Institutional version focused on startups, built with Django. Developed in partnership with
+          Brisa and MCTI.</p>
+      </article>
+
+      <article id="foco-gestao-conteudo" class="projeto card">
+        <h2 class="heading">Content Management</h2>
+        <p>
+          Flutter-based content management platform focused on versioning, editing, and structured organization through
+          <strong>Domains</strong>, <strong>Subdomains</strong>, and <strong>Contexts</strong>.
+          Ideal for building <strong>custom datasets</strong> and organizing strategic information to support
+          <strong>AGI (Artificial General Intelligence)</strong> systems.
+        </p>
+      </article>
+
+      <article class="projeto card">
+        <h2 class="heading">Coming soon...</h2>
+        <p class="text">Another impactful project is currently under development. More information coming soon.</p>
+      </article>
+    </div>
+
+    <div class="contato-final">
+      <p class="text">📧 Reach out at <a href="mailto:matheuspiresesilva@gmail.com">matheuspiresesilva@gmail.com</a></p>
+    </div>
+  </section>
+
+  <div class="stack-final">
+    <h3>🛠️ Technologies used in the projects</h3>
+    <ul>
+      <li><strong>Languages:</strong> Python, Dart, JavaScript, SQL, HTML, CSS</li>
+      <li><strong>Frameworks & Libraries:</strong> Flask, Django, Streamlit, Flutter, React, Plotly, Pandas</li>
+      <li><strong>Backend & APIs:</strong> Node.js, Prisma, JWT, Firebase Functions, Webhooks</li>
+      <li><strong>Databases:</strong> Firebase Realtime Database, PostgreSQL, SQLite, SQLAlchemy</li>
+      <li><strong>Tools & Platforms:</strong> Firebase Auth, Firebase Storage, GitHub, VS Code, Ubuntu, Cloudflare</li>
+    </ul>
+  </div>
+
+
+  <script>
+    const checkbox = document.getElementById('themeToggle');
+    checkbox.checked = localStorage.getItem('theme') === 'light';
+  </script>
+  <section>
+    <a href="https://wa.me/5521969084980" class="whatsapp-float" target="_blank" aria-label="Message me on WhatsApp">
+      <img src="imgs/icon-whatsapp.png" alt="WhatsApp" />
+      <span class="tooltip">Message me on WhatsApp</span>
+    </a>
+  </section>
+
+</body>
+
+</html>
